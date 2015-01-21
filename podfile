@@ -2,3 +2,4 @@ platform :ios,'8.0'
 
 pod 'SVProgressHUD'
 pod 'SVWebViewController', :head
+pod 'SDWebImage', '3.7.1'

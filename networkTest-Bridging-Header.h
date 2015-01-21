@@ -9,3 +9,5 @@
 #import "SVProgressHUD.h"
 
 #import "SVWebViewController.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>

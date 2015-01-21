@@ -30,6 +30,8 @@
 		2FC3BC2D1A6A524400CE54C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FC3BC2C1A6A524400CE54C3 /* Images.xcassets */; };
 		2FC3BC301A6A524400CE54C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FC3BC2E1A6A524400CE54C3 /* LaunchScreen.xib */; };
 		2FC3BC3C1A6A524400CE54C3 /* networkTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC3BC3B1A6A524400CE54C3 /* networkTestTests.swift */; };
+		2FF72C321A6FF1A400BD1FB1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF72C311A6FF1A400BD1FB1 /* ImageIO.framework */; };
+		2FF72C361A6FF1AC00BD1FB1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FF72C351A6FF1AC00BD1FB1 /* MapKit.framework */; };
 		8D4F1C01EBCEF5A3AB7E75B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF185E54A3D789CED8D5860E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +125,8 @@
 		2FC3BC351A6A524400CE54C3 /* networkTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = networkTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FC3BC3A1A6A524400CE54C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FC3BC3B1A6A524400CE54C3 /* networkTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkTestTests.swift; sourceTree = "<group>"; };
+		2FF72C311A6FF1A400BD1FB1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2FF72C351A6FF1AC00BD1FB1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		33CD279FF58CA17F953B9DAB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CF185E54A3D789CED8D5860E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,6 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF72C361A6FF1AC00BD1FB1 /* MapKit.framework in Frameworks */,
+				2FF72C321A6FF1A400BD1FB1 /* ImageIO.framework in Frameworks */,
 				2FA715851A6BFE7100192E0E /* CoreGraphics.framework in Frameworks */,
 				2F9AC99E1A6A52CC0014AFA1 /* Alamofire.framework in Frameworks */,
 				8D4F1C01EBCEF5A3AB7E75B0 /* libPods.a in Frameworks */,
@@ -278,6 +284,8 @@
 		967C97E450454097D0E87E22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FF72C351A6FF1AC00BD1FB1 /* MapKit.framework */,
+				2FF72C311A6FF1A400BD1FB1 /* ImageIO.framework */,
 				CF185E54A3D789CED8D5860E /* libPods.a */,
 			);
 			name = Frameworks;

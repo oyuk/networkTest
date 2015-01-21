@@ -82,21 +82,28 @@ class Books:NSObject,UITableViewDataSource{
             cell.publisherNameLabel.text = book.publisherName
             cell.priceLabel.text = "\(book.price!)円"
             
-    
-           cell.request =  Alamofire.request(.GET,book.imageUrl!)
-            .response() { (request,_, data,error) in
-                
-                if error == nil && data != nil {
-                    if request.URLString == cell.request?.request.URLString {
+            let imageurl = NSURL(string: book.imageUrl!)
 
-                        dispatch_async(dispatch_get_main_queue()) { () in
-                            let image = UIImage(data: data as NSData)
-                            cell.bookImageView.image = image
-                        }
-                    }
-                    
-                }
-            }
+               //MARK: これを使いたいけどエラーがでる
+//            cell.bookImageView.sd_setImageWithURL(imageurl, placeholderImage: nil, options: SDImageCacheType.Memory)
+            cell.bookImageView.sd_setImageWithURL(imageurl, placeholderImage: nil)
+
+
+            
+//           cell.request =  Alamofire.request(.GET,book.imageUrl!)
+//            .response() { (request,_, data,error) in
+//                
+//                if error == nil && data != nil {
+//                    if request.URLString == cell.request?.request.URLString {
+//
+//                        dispatch_async(dispatch_get_main_queue()) { () in
+//                            let image = UIImage(data: data as NSData)
+//                            cell.bookImageView.image = image
+//                        }
+//                    }
+//                    
+//                }
+//            }
             
             return cell
         }
